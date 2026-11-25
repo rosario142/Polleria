@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Polleria/static/css/main.858a8308.css",
+    "main.js": "/Polleria/static/js/main.06ab1100.js",
+    "static/js/453.70ef23da.chunk.js": "/Polleria/static/js/453.70ef23da.chunk.js",
+    "index.html": "/Polleria/index.html",
+    "main.858a8308.css.map": "/Polleria/static/css/main.858a8308.css.map",
+    "main.06ab1100.js.map": "/Polleria/static/js/main.06ab1100.js.map",
+    "453.70ef23da.chunk.js.map": "/Polleria/static/js/453.70ef23da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.858a8308.css",
+    "static/js/main.06ab1100.js"
+  ]
+}
