@@ -1,0 +1,230 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #292d32;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  width: min(1180px, 94%);
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 25px;
+  border-radius: 18px;
+  color: white;
+  background: #a82c20;
+}
+
+.marca {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: white;
+  font-size: 36px;
+}
+
+.encabezado h1 {
+  margin: 0 0 8px;
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+.encabezado p {
+  margin: 0;
+  color: #ffe3dc;
+}
+
+.estado {
+  margin: 18px 0;
+  padding: 13px 16px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  overflow-wrap: anywhere;
+}
+
+.punto {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background: #299764;
+}
+
+.resumen {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.tarjeta-resumen,
+.panel {
+  padding: 22px;
+  border: 1px solid #e6e7eb;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 3px 12px #20202008;
+}
+
+.tarjeta-resumen > span {
+  font-size: 27px;
+}
+
+.tarjeta-resumen p {
+  margin: 12px 0 6px;
+  color: #656b73;
+}
+
+.tarjeta-resumen strong {
+  font-size: 26px;
+  overflow-wrap: anywhere;
+}
+
+.paneles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.panel h2 {
+  margin: 0 0 20px;
+  font-size: 21px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d6d9df;
+  border-radius: 8px;
+  background: white;
+  color: #292d32;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #e8a49d;
+  border-color: #a82c20;
+}
+
+button {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #a82c20;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #842117;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.listado {
+  margin-top: 22px;
+}
+
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #eceef1;
+  white-space: nowrap;
+}
+
+th {
+  background: #faf6f5;
+  color: #5a3330;
+}
+
+.boton-eliminar {
+  padding: 8px 11px;
+  background: #b42318;
+}
+
+.boton-eliminar:hover {
+  background: #861b13;
+}
+
+.vacio,
+.ayuda {
+  color: #707782;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 28px 0 8px;
+  text-align: center;
+  color: #747982;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .resumen,
+  .paneles {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado {
+    padding: 18px;
+  }
+
+  .tarjeta-resumen,
+  .panel {
+    padding: 17px;
+  }
+}
+
